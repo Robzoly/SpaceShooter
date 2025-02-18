@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 2D</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 game-ui" style="display: none;">
+                <div class="game-info">
+                    <span id="scoreDisplay" class="info-item">SCORE: 0</span>
+                    <span id="roundDisplay" class="info-item">ROUND: 1</span>
+                    <span id="livesDisplay" class="info-item">LIVES: 3</span>
+                </div>
+            </div>
+            <div class="col-12">
+                <canvas id="gameCanvas" width="800" height="600" style="display: none;"></canvas>
+                <div id="startScreen" class="text-center start-screen">
+                    <h1 class="game-title">Space Shooter</h1>
+                    <button id="startButton" class="btn btn-futuristic">Start Game</button>
+                </div>
+                <div id="pauseMenu" class="text-center" style="display: none;">
+                    <h2 class="retro-title">Game Paused</h2>
+                    <button id="resumeButton" class="btn btn-primary">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/powerup.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
